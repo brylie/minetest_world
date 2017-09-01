@@ -7,3 +7,7 @@ from .models import World
 class IndexView(generic.ListView):
     model = World
     template_name = 'world/index.html'
+
+class DetailView(generic.DetailView):
+    model = World
+    template_name = 'world/detail.html'
