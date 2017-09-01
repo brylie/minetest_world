@@ -53,4 +53,4 @@ class WorldRevision(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-return self.world.name + ' revision'
+        return self.world.name + ' revision'

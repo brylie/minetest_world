@@ -43,4 +43,4 @@ class Creation(models.Model):
 
     def __str__(self):
         # Return creation name
-return self.name
+        return self.name
