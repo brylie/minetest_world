@@ -19,9 +19,12 @@ from django.conf.urls.static import static
 
 from . import settings
 
+from home import views as home_views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', home_views.index)
 ]
 
 if settings.DEBUG:
