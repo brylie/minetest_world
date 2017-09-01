@@ -2,4 +2,10 @@
 
 {% block content %}
   <h1>Worlds</h1>
+
+  <ul>
+    {% for world in object_list %}
+      <li>{{ world.name }}</li>
+    {% endfor %}
+  </ul>
 {% endblock %}
